@@ -1,0 +1,11 @@
+h1 {
+  text-align: center;
+  color: tan;
+}
+body {
+  display: flex;
+  background-color: wheat;
+  place-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
