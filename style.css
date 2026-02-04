@@ -3,9 +3,23 @@ h1 {
   color: tan;
 }
 body {
-  display: flex;
+  display: grid;
   background-color: wheat;
   place-items: center;
-  min-height: 100vh;
+  margin: 50px;
+}
+input {
+  display: flex;
+  background-color: rgb(189, 174, 110);
+  place-items: center;
+  font-family: Helvetica;
+  border-color: blanchedalmond;
+  box-shadow: 30px;
   margin: 0;
+}
+
+::placeholder {
+  font-family: Helvetica;
+  color: bisque; /* Gray text color for the placeholder */
+  /* opacity: 50%; Firefox default is lower opacity, this ensures consistency */
 }
