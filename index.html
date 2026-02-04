@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-
     <title>To-Do App</title>
   </head>
 
@@ -14,14 +12,24 @@
       <header>
         <h1>To-Do List Application</h1>
         <div>
-          <input id="" type="text" placeholder="Task Incoming!!" />
+          <input id="taskInput" type="text" placeholder="Task Incoming!!" />
         </div>
         <div>
-          <button id="" type="button"><strong>Add Task</strong></button>
+          <button id="addBtn" type="button"><strong>Add Task</strong></button>
         </div>
       </header>
 
-      <section></section>
+      <section class="board">
+        <div>
+          <h2>Standing Task</h2>
+          <ol id="standingList"></ol>
+        </div>
+
+        <div>
+          <h2>Complete</h2>
+          <ol id="completedList"></ol>
+        </div>
+      </section>
     </main>
 
     <script defer src="./index.js"></script>

@@ -37,3 +37,9 @@ button {
   box-shadow: 30px;
   margin: 0;
 }
+
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
