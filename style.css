@@ -5,13 +5,17 @@ h1 {
 body {
   display: grid;
   background-color: wheat;
-  place-items: center;
+  /* place-items: center; */
   margin: 50px;
+}
+header {
+  display: grid;
+  place-items: center;
 }
 input {
   display: flex;
   background-color: rgb(189, 174, 110);
-  place-items: center;
+  color: rgb(9, 6, 1);
   font-family: Helvetica;
   border-color: blanchedalmond;
   box-shadow: 30px;
@@ -20,6 +24,16 @@ input {
 
 ::placeholder {
   font-family: Helvetica;
-  color: bisque; /* Gray text color for the placeholder */
-  /* opacity: 50%; Firefox default is lower opacity, this ensures consistency */
+  color: bisque;
+  opacity: 70%;
+}
+
+button {
+  display: flex;
+  color: brown;
+  background-color: rgb(189, 174, 110);
+  font-family: Helvetica;
+  border-color: blanchedalmond;
+  box-shadow: 30px;
+  margin: 0;
 }
