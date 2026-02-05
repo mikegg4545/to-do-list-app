@@ -2,6 +2,12 @@ h1 {
   text-align: center;
   color: tan;
 }
+
+h2 {
+  text-align: center;
+  color: tan;
+}
+
 body {
   /* display: grid; */
   background-color: wheat;
@@ -20,6 +26,10 @@ input {
   border-color: blanchedalmond;
   box-shadow: 30px;
   margin: 0;
+}
+
+input[type="checkbox"] {
+  accent-color: brown;
 }
 
 ::placeholder {
@@ -52,6 +62,7 @@ ol {
 li {
   display: flex;
   align-items: center;
+  color: brown;
   gap: 8px;
   list-style-position: inside;
   margin-bottom: 12px;
