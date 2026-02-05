@@ -3,7 +3,7 @@ h1 {
   color: tan;
 }
 body {
-  display: grid;
+  /* display: grid; */
   background-color: wheat;
   /* place-items: center; */
   margin: 50px;
@@ -42,4 +42,24 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+}
+
+ol {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style-position: inside;
+  margin-bottom: 12px;
+}
+
+li label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
 }

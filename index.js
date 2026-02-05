@@ -34,6 +34,8 @@ function addTask() {
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
 
+  //add label
+  const label = document.createElement("label");
   //add checkbox to li
   li.appendChild(checkbox);
   li.appendChild(document.createTextNode(" " + text));
