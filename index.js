@@ -28,7 +28,15 @@ function addTask() {
   //create li in ram
   const li = document.createElement("li");
   //put text inside list
-  li.textContent = text;
+  // li.textContent = text;
+
+  //create input for checkbox
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+
+  //add checkbox to li
+  li.appendChild(checkbox);
+  li.appendChild(document.createTextNode(" " + text));
 
   //add li to ol
   standingList.appendChild(li);
@@ -38,3 +46,9 @@ function addTask() {
 
 //listen for button click
 addBtn.addEventListener("click", addTask);
+
+//Enter key to add task
+input.addEventListener("keydown", (e) => {
+  //func runs when (e)vent object event happens
+  if (e.key === "Enter") addTask(); //key press, call func
+});
