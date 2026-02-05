@@ -11,10 +11,30 @@ console.log("My code is running");
 
 // document.body.appendChild(button);
 
-// function addTask() {}
 //---------------------
 
+//find divs by id
 const input = document.getElementById("taskInput");
 const addBtn = document.getElementById("addBtn");
 const standingList = document.getElementById("standingList");
 const completedList = document.getElementById("completedList");
+
+function addTask() {
+  //read&store user input
+  const text = input.value;
+  //prevent empty list
+  if (text === "") return;
+
+  //create li in ram
+  const li = document.createElement("li");
+  //put text inside list
+  li.textContent = text;
+
+  //add li to ol
+  standingList.appendChild(li);
+  //clear input box
+  input.value = "";
+}
+
+//listen for button click
+addBtn.addEventListener("click", addTask);
